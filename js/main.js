@@ -1,0 +1,23 @@
+$(document).ready(function() {
+    //Cлайдер
+    $('.slider').slick({
+        slidesToShow:2,
+        responsive:[
+            {
+                breakpoint:1400,
+                settings:{
+                    arrows:false,
+                    dots:true
+                }
+            },
+            {
+                breakpoint:769,
+                settings:{
+                    arrows:false,
+                    dots:true,
+                    slidesToShow:1,
+                }
+            },
+        ]
+    });
+});
